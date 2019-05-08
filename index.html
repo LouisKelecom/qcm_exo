@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>QCM</title>
+</head>
+
+<body>
+    <div class="container my-3">
+        <div id="bloc1" class="text-center">
+            <h1>QCM sur le DOM</h1>
+        </div>
+        <div class="bloc2">
+            <h3 class="m-3 tache">1. Que signifie DOM?</h3>
+            <form action="">
+                <div class="reponses m-3 p-3">
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios1" type="radio" name="exampleRadios" value="option1"
+                            checked="">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Document of Model
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios1" type="radio" name="exampleRadios"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Javascript Web
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios1" type="radio" name="exampleRadios"
+                            value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Document Object Model
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios1" type="radio" name="exampleRadios"
+                            value="option4">
+                        <label class="form-check-label" for="exampleRadios4">
+                            Dead or Make
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="bloc2">
+            <h3 class="m-3 tache">2. Faut-il lier le Javascript pour faire du DOM?</h3>
+            <form action="">
+                <div class="reponses m-3 p-3">
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios2" type="radio" name="exampleRadios" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Oui
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios2" type="radio" name="exampleRadios"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Non
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios2" type="radio" name="exampleRadios"
+                            value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Le DOM n'a rien à voir avec le Javascript
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios2" type="radio" name="exampleRadios"
+                            value="option4">
+                        <label class="form-check-label" for="exampleRadios4">
+                            Ca dépend du soleil
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="bloc2">
+            <h3 class="m-3 tache">3. Le DOM peut-il modifier le style ?</h3>
+            <form action="">
+                <div class="reponses m-3 p-3">
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios3" type="radio" name="exampleRadios" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Seulement si j'ai un fichier css lié
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios3" type="radio" name="exampleRadios"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Non
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios3" type="radio" name="exampleRadios"
+                            value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Ca dépend du style
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios3" type="radio" name="exampleRadios"
+                            value="option4">
+                        <label class="form-check-label" for="exampleRadios4">
+                            Bien sûr !
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="bloc2">
+            <h3 class="m-3 tache">
+                4. Comment puis-je rajouter un li dans un ul?</h3>
+            <form action="">
+                <div class="reponses m-3 p-3">
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios4" type="radio" name="exampleRadios" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            ul.append(document.createElement('li'))
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios4" type="radio" name="exampleRadios"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            ul.parentElement
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios4" type="radio" name="exampleRadios"
+                            value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            ul.insert('li')
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios4" type="radio" name="exampleRadios"
+                            value="option4">
+                        <label class="form-check-label" for="exampleRadios4">
+                            createElement("ul", "li")
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="bloc2">
+            <h3 class="m-3 tache">5. Comment rajouter une class à elem?</h3>
+            <form action="">
+                <div class="reponses m-3 p-3">
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios5" type="radio" name="exampleRadios" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            element.add("laClass")
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios5" type="radio" name="exampleRadios"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            elem.classList.add("laClass")
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios5" type="radio" name="exampleRadios"
+                            value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            elem.className = "laClass"
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input exampleRadios5" type="radio" name="exampleRadios"
+                            value="option4">
+                        <label class="form-check-label" for="exampleRadios4">
+                            elem.classList.add = "laClass"
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button id="btnAdd" type="button" class="btn mb-3 mt-3">Valider les
+                réponses</button>
+        </div>
+    </div>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
