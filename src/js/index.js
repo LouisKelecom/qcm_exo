@@ -24,14 +24,14 @@ let reponses = {
     question3: inputsQuestion3[3],
     question4: inputsQuestion4[0],
     question5: inputsQuestion5[1],
-}
+};
 
 console.log(reponses.question1)
 
 // Créer le bouton Recommencer
 const recommencerBtn = document.createElement("button");
 recommencerBtn.innerText = "Recommencer";
-recommencerBtn.classList.add("btn", "mt-1", "mb-3");
+recommencerBtn.classList.add("btn", "mt-3", "mb-3");
 const divBtn = document.getElementsByClassName("justify-content-center")[0];
 
 // Bouton valider
@@ -53,6 +53,9 @@ validerBtn.addEventListener("click", () => {
     // Lancer la fonction résultat
     resultat();
 
+    // Désactiver la possibilité de changer les réponses en lançant la fonction desactivation
+    desactivation();
+    
 });
 
 let score = 0; // déclarer le score de départ à 0
@@ -82,4 +85,14 @@ const resultat = () => {
     } else {
         alert(`Vous avez eu ${score} sur 5, réessayez jusqu'à ce que vous fassiez un sans-faute!`);
     }
-}
+};
+
+let inputs = document.getElementsByClassName("form-check-input");
+console.log(inputs);
+
+// Fonction desactivation
+const desactivation = () => {
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].disabled = true;
+    }
+};
