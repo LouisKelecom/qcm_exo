@@ -5762,5 +5762,8 @@ body .bg-success {
 body .bg-danger {
   background-color: #f23030 !important;
 }
+body .form-check-input:disabled ~ .form-check-label {
+  color: black !important;
+}
 
 /*# sourceMappingURL=style.css.map */
